@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/images/logo.svg';
+import Logo from '../components/Logo';
 import main from '../assets/images/main.svg';
 import Wrapper from '../cssWrapper/LangingPage';
 
@@ -7,7 +7,7 @@ const Landing = () => {
   return (
     <Wrapper>
         <nav>
-        <img src="https://img.icons8.com/arcade/64/null/o.png" alt='logo' className='logo'/>
+        <Logo/>
         </nav>
         <div className='container page'>
             <div className='info'>
