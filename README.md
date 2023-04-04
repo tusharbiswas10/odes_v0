@@ -3,7 +3,7 @@
  - react.js
  - normalize css
  - react router dom
-# Screenshots (Implemented)
+# Screenshots (Implemented features)
  - landing page 
  ![image](https://user-images.githubusercontent.com/66631270/229365015-576bdf14-5ccb-4691-9d25-79b6ce4de8b1.png)
  - Register page
