@@ -2,18 +2,19 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import { Logo, FormRow, Alert } from '../components';
 import Wrapper from '../cssWrapper/RegisterPage';
+import { useAppContext } from '../context/appContext';
 
 const initailState = {
   name:'',
   email:'',
   password:'',
   isMember:true,
-  showAlert:false ,
+  
 }
 
 const Register = () => {
   const [values, setValues] = useState(initailState);
-
+  const {isLoading, showAlert}=useAppContext()
   const toggleMember = () =>{
     setValues({...values, isMember:!values.isMember })
   }
@@ -31,7 +32,7 @@ const Register = () => {
       <Logo/>
 
       <h3>{values.isMember ? 'Login' : 'Register'}</h3>
-      {values.showAlert && <Alert/> }
+      {showAlert && <Alert/> }
        
       {/*Form name field, only viisble if in register & isMember is false*/}
       {!values.isMember &&(
